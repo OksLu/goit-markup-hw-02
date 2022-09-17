@@ -3,11 +3,16 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --white-color: #ffffff;
+  --background-color: #2f303a;
+  --light-bckgrnd-color: #f5f4fa;
 }
 
 body {
   background-color: var(--white-color);
+  color: var(--title-text-color);
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 /* хедер */
 ul {
@@ -20,39 +25,39 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
 }
 .logo .accent {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .nav-link {
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--title-text-color);
 }
-.contacts {
+.current-page {
+  color: var(--accent-color);
+}
+.contacts-link {
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px1.14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 .nav-link:hover,
 .nav-link:focus,
-.contacts:hover,
-.contacts:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 /* мейн контент */
 /* перша секція */
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 .hero-title {
   font-weight: 900;
@@ -73,65 +78,58 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
-  background: #2196f3;
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* features*/
 
-.features-list .title{
+.features-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
-.features-list .text {
-  font-size: 14px;
+.features-text {
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 /* третя секція  чим ми займаємось*/
 .section-title {
-font-weight: 700;
-font-size: 36px;
-line-height: 1,16;
-text-align: center;
-letter-spacing: 0.03em
-color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
 }
 
 /* команда */
 .team {
-  background-color: #F5F4FA;
+  background-color: var(--light-bckgrnd-color);
 }
 .team-list-item {
-  background-color:  var(--white-color);
+  background-color: var(--white-color);
 }
 .team-list .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color)
+  color: var(--title-text-color);
 }
 .team-list .text {
   font-size: 16px;
-line-height: 1.18;
-letter-spacing: 0.03em;
-color: var(--primary-text-color)
+  line-height: 1.18;
+  color: var(--primary-text-color);
 }
 /* футер */
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 .footer .logo {
   color: var(--white-color);
@@ -143,14 +141,9 @@ a {
   color: var(--title-text-color);
   text-decoration: none;
   outline: none;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
-a:hover,
-a:focus {
-  color: var(--accent-color);
-}
+
 .footer-link {
   color: var(--white-color);
 }
@@ -162,18 +155,27 @@ a:focus {
 .portfolio {
   background-color: var(--white-color);
 }
-
-.portfolio-btn {
-  background-color: #F5F4FA;
+.current-btn {
+  color: var(--white-color);
+  background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
 }
-.portfolio-btn:hover, 
+.portfolio-btn {
+  background-color: var(--light-bckgrnd-color);
+  color: var(--title-text-color)
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
@@ -183,12 +185,10 @@ a:focus {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em
-  var(--title-text-color)
+  letter-spacing: 0.06em;
 }
 .projects-list .text {
   font-size: 16px;
   line-height: 1.8;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
